@@ -1,6 +1,6 @@
 # Japanese ML Factor Model for Benchmark-Relative Long-Only Investing
 
-This repository implements a thesis-oriented empirical asset pricing pipeline for **Japanese equities** with the exact design principles in your proposal:
+This repository implements a  empirical asset pricing pipeline for **Japanese equities** with the exact design principles in your proposal:
 
 - **Prediction target:** one-period-ahead **stock return relative to a benchmark**
 - **Market:** intended for **liquid Japanese cash equities**
@@ -71,7 +71,7 @@ This makes the research output much closer to institutional implementation.
 
 ## Suggested Japanese market use
 
-For your actual thesis dataset, I recommend:
+For your future work  I recommend:
 
 - **Universe:** TOPIX constituents, TOPIX 500, or TSE Prime with liquidity screens
 - **Benchmark:** TOPIX or TOPIX 500
@@ -80,7 +80,6 @@ For your actual thesis dataset, I recommend:
 - **Fundamental lag:** at least 3 months after reported accounting dates
 - **Transaction costs:** calibrate using a realistic bps assumption for Japanese cash equities
 
-The current code already supports these assumptions through the config.
 
 ---
 
@@ -212,7 +211,7 @@ Key parameters:
 
 ---
 
-## Important thesis notes
+## Important  notes
 
 ### A) Japanese data quality matters more than model choice
 The code is ready, but empirical credibility will depend on:
@@ -231,16 +230,16 @@ The code supports `horizon_months > 1`, but for clean non-overlapping evaluation
 That keeps the realized target horizon aligned with the test window.
 
 ### C) This implementation is intentionally practical
-Your cited literature discusses end-to-end cost-aware learning. This code implements a pragmatic thesis-ready version:
+ This code implements a pragmatic thesis-ready version:
 - benchmark-relative stock-level prediction
 - realistic long-only portfolio construction
 - explicit turnover and transaction-cost penalties
 
-If you want, the next extension would be a **cost-aware optimizer** or **end-to-end learning objective**.
+
 
 ---
 
-## Outputs and thesis interpretation
+## Outputs and  interpretation
 
 ### Predictive outputs
 `prediction_summary.csv` reports:
@@ -264,27 +263,7 @@ This directly supports the thesis claim:
 
 ---
 
-## Recommended next extensions for a PhD-grade version
 
-1. **Industry-neutral standardization**
-2. **Delisting return handling**
-3. **TOPIX constituent history ingestion**
-4. **Sector constraints**
-5. **Tracking error optimization using a covariance model**
-6. **SHAP / feature importance diagnostics**
-7. **Reality-check / SPA tests for model comparison**
-8. **Subsample analysis**
-   - Abenomics
-   - COVID period
-   - inflation / BoJ regime changes
-9. **Capacity and market impact stress tests**
-10. **End-to-end implementable efficient frontier extension**
-
----
-
-## Thesis mapping
-
-This code maps cleanly to thesis chapters:
 
 - **Problem definition:** benchmark-relative cross-sectional return prediction
 - **Literature review:** linear vs non-linear asset pricing models
@@ -294,13 +273,3 @@ This code maps cleanly to thesis chapters:
 
 ---
 
-## If you want the next step
-
-I can also help you with any of these immediately:
-
-1. adapt the code to **actual Japanese vendor data**
-2. add a **TOPIX/TOPIX 500 research universe builder**
-3. convert this into a **full empirical thesis chapter**
-4. add **plots and report generation**
-5. add **XGBoost / LightGBM / CatBoost** versions
-6. add a **cvxpy benchmark-relative optimizer**
