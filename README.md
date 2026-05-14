@@ -71,7 +71,7 @@ This makes the research output much closer to institutional implementation.
 
 ## Suggested Japanese market use
 
-For your future work  I recommend:
+
 
 - **Universe:** TOPIX constituents, TOPIX 500, or TSE Prime with liquidity screens
 - **Benchmark:** TOPIX or TOPIX 500
